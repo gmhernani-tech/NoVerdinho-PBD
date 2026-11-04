@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # 💵 NoVerdinho - Sistema de Gestão Financeira Pessoal
+=======
+# 🥦 NoVerdinho - Sistema de Gestão Financeira Pessoal
+>>>>>>> 81bb9bc (Atualização README)
 
 > **Trabalho Prático Integrado — Disciplina: Banco de Dados Avançado (UNIP)**  
 > **Tecnologias:** C# .NET 8, ASP.NET Core MVC, SQL Server, HTML5/CSS3, JavaScript, PowerShell.
@@ -30,10 +34,17 @@ src_github/
       └── wwwroot/
 ```
 
+<<<<<<< HEAD
 ## 🗄️ Arquitetura do Banco de Dados (SQL Server)
 A modelagem relacional foi desenhada no Microsoft SQL Server, garantindo a integridade dos dados e o cumprimento das normas de normalização (3FN).
 
 ## 🛠️ Objetos Avançados Implementados
+=======
+🗄️ Arquitetura do Banco de Dados (SQL Server)
+A modelagem relacional foi desenhada no Microsoft SQL Server, garantindo a integridade dos dados e o cumprimento das normas de normalização (3FN).
+
+🛠️ Objetos Avançados Implementados
+>>>>>>> 81bb9bc (Atualização README)
 Stored Procedures (sp_RegistrarGastoSeguro): Encapsula a lógica de negócio para inserção de movimentações financeiras dentro de um bloco transacional explícito (BEGIN TRANSACTION / COMMIT / ROLLBACK), garantindo a propriedade ACID.
 
 Views (vw_ResumoConsolidadoMensal): Unifica as despesas de gastos fixos/variáveis e compras de mercado por utilizador, otimizando relatórios e dashboards.
@@ -44,7 +55,11 @@ Triggers (trg_AuditaAlteracaoSalario): Regra de auditoria automática acionada e
 
 Índices de Otimização (IX_gastos_usuario_data, IX_compras_usuario_data, IX_compra_itens_produto): Índices Não-Agrupados (Non-Clustered) criados para aceleração de pesquisas em consultas frequentes de filtragem por data e utilizador.
 
+<<<<<<< HEAD
 ## 🚀 Como Executar o Projeto
+=======
+🚀 Como Executar o Projeto
+>>>>>>> 81bb9bc (Atualização README)
 Prerequisitos
 .NET 8 SDK instalado.
 
@@ -64,14 +79,21 @@ Nota: O script utiliza o utilitário sqlcmd para ligar à instância (localdb)\M
 
 2. Configuração e Execução do Backend/Frontend (.NET 8)
 Garante que a String de Conexão no ficheiro appsettings.json aponta para a tua instância local do SQL Server:
+<<<<<<< HEAD
 ```text
+=======
+
+>>>>>>> 81bb9bc (Atualização README)
 JSON
 {
   "ConnectionStrings": {
     "NoVerdinhoDB": "Server=(localdb)\\MSSQLLocalDB;Database=NoVerdinhoDB;Trusted_Connection=True;MultipleActiveResultSets=true"
   }
 }
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 81bb9bc (Atualização README)
 Executa a aplicação através do terminal do .NET:
 
 Bash
@@ -79,20 +101,33 @@ dotnet restore
 dotnet run
 Acede à aplicação no navegador: https://localhost:7198 (ou na porta configurada no teu ambiente).
 
+<<<<<<< HEAD
 ## 📡 Chamadas e Testes de API / Endpoints
+=======
+📡 Chamadas e Testes de API / Endpoints
+>>>>>>> 81bb9bc (Atualização README)
 Abaixo estão listados exemplos de endpoints internos utilizados para integração das funcionalidades:
 
 1. Registar Novo Mercado
 HTTP Method: POST
+<<<<<<< HEAD
 ```text
 Endpoint: /Home/SalvarMercado
 ```
 Payload:
 ```text
+=======
+
+Endpoint: /Home/SalvarMercado
+
+Payload:
+
+>>>>>>> 81bb9bc (Atualização README)
 JSON
 {
   "nome": "Carrefour Campinas"
 }
+<<<<<<< HEAD
 ```
 2. Registar Compra com Itens
 HTTP Method: POST
@@ -101,6 +136,15 @@ Endpoint: /Home/SalvarCompra
 ```
 Payload:
 ```text
+=======
+2. Registar Compra com Itens
+HTTP Method: POST
+
+Endpoint: /Home/SalvarCompra
+
+Payload:
+
+>>>>>>> 81bb9bc (Atualização README)
 JSON
 {
   "mercadoId": 1,
@@ -114,6 +158,7 @@ JSON
     }
   ]
 }
+<<<<<<< HEAD
 ```
 3. Consultar Compras do Mês (Filtro Dinâmico)
 HTTP Method: GET
@@ -122,6 +167,15 @@ Endpoint: /Home/ListarComprasMes?mes=11&ano=2026
 ```
 Resposta:
 ```text
+=======
+3. Consultar Compras do Mês (Filtro Dinâmico)
+HTTP Method: GET
+
+Endpoint: /Home/ListarComprasMes?mes=11&ano=2026
+
+Resposta:
+
+>>>>>>> 81bb9bc (Atualização README)
 JSON
 [
   {
@@ -133,6 +187,12 @@ JSON
     "data": "04/11/2026"
   }
 ]
+<<<<<<< HEAD
 ```
 ## 📜 Licença e Autoria
 Trabalho desenvolvido como requisito de avaliação da disciplina de Banco de Dados Avançado na Universidade Paulista (UNIP).
+=======
+
+📜 Licença e Autoria
+Trabalho desenvolvido como requisito de avaliação da disciplina de Banco de Dados Avançado na Universidade Paulista (UNIP).
+>>>>>>> 81bb9bc (Atualização README)
