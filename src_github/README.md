@@ -64,7 +64,7 @@ Nota: O script utiliza o utilitário sqlcmd para ligar à instância (localdb)\M
 
 2. Configuração e Execução do Backend/Frontend (.NET 8)
 Garante que a String de Conexão no ficheiro appsettings.json aponta para a tua instância local do SQL Server:
-
+```text
 JSON
 {
   "ConnectionStrings": {
@@ -72,7 +72,7 @@ JSON
   }
 }
 Executa a aplicação através do terminal do .NET:
-
+```
 Bash
 dotnet restore
 dotnet run
@@ -83,11 +83,11 @@ Abaixo estão listados exemplos de endpoints internos utilizados para integraç�
 
 1. Registar Novo Mercado
 HTTP Method: POST
-
+```text
 Endpoint: /Home/SalvarMercado
-
+```
 Payload:
-
+```text
 JSON
 {
   "nome": "Carrefour Campinas"
@@ -96,9 +96,9 @@ JSON
 HTTP Method: POST
 
 Endpoint: /Home/SalvarCompra
-
+```
 Payload:
-
+```text
 JSON
 {
   "mercadoId": 1,
@@ -130,6 +130,6 @@ JSON
     "data": "04/11/2026"
   }
 ]
-
+```
 ## 📜 Licença e Autoria
 Trabalho desenvolvido como requisito de avaliação da disciplina de Banco de Dados Avançado na Universidade Paulista (UNIP).
