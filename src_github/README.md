@@ -96,7 +96,7 @@ JSON
 ```
 2. Registar Compra com Itens
 HTTP Method: POST
-
+```text
 Endpoint: /Home/SalvarCompra
 ```
 Payload:
@@ -117,9 +117,9 @@ JSON
 ```
 3. Consultar Compras do Mês (Filtro Dinâmico)
 HTTP Method: GET
-
+```text
 Endpoint: /Home/ListarComprasMes?mes=11&ano=2026
-
+```
 Resposta:
 ```text
 JSON
