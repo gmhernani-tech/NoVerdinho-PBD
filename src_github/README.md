@@ -71,8 +71,9 @@ JSON
     "NoVerdinhoDB": "Server=(localdb)\\MSSQLLocalDB;Database=NoVerdinhoDB;Trusted_Connection=True;MultipleActiveResultSets=true"
   }
 }
-Executa a aplicação através do terminal do .NET:
 ```
+Executa a aplicação através do terminal do .NET:
+
 Bash
 dotnet restore
 dotnet run
@@ -92,6 +93,7 @@ JSON
 {
   "nome": "Carrefour Campinas"
 }
+```
 2. Registar Compra com Itens
 HTTP Method: POST
 
@@ -112,13 +114,14 @@ JSON
     }
   ]
 }
+```
 3. Consultar Compras do Mês (Filtro Dinâmico)
 HTTP Method: GET
 
 Endpoint: /Home/ListarComprasMes?mes=11&ano=2026
 
 Resposta:
-
+```text
 JSON
 [
   {
