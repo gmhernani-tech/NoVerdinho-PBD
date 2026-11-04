@@ -1,4 +1,4 @@
-# 🥦 NoVerdinho - Sistema de Gestão Financeira Pessoal
+# 💵 NoVerdinho - Sistema de Gestão Financeira Pessoal
 
 > **Trabalho Prático Integrado — Disciplina: Banco de Dados Avançado (UNIP)**  
 > **Tecnologias:** C# .NET 8, ASP.NET Core MVC, SQL Server, HTML5/CSS3, JavaScript, PowerShell.
@@ -30,10 +30,10 @@ src_github/
       └── wwwroot/
 ```
 
-🗄️ Arquitetura do Banco de Dados (SQL Server)
+## 🗄️ Arquitetura do Banco de Dados (SQL Server)
 A modelagem relacional foi desenhada no Microsoft SQL Server, garantindo a integridade dos dados e o cumprimento das normas de normalização (3FN).
 
-🛠️ Objetos Avançados Implementados
+## 🛠️ Objetos Avançados Implementados
 Stored Procedures (sp_RegistrarGastoSeguro): Encapsula a lógica de negócio para inserção de movimentações financeiras dentro de um bloco transacional explícito (BEGIN TRANSACTION / COMMIT / ROLLBACK), garantindo a propriedade ACID.
 
 Views (vw_ResumoConsolidadoMensal): Unifica as despesas de gastos fixos/variáveis e compras de mercado por utilizador, otimizando relatórios e dashboards.
@@ -44,7 +44,7 @@ Triggers (trg_AuditaAlteracaoSalario): Regra de auditoria automática acionada e
 
 Índices de Otimização (IX_gastos_usuario_data, IX_compras_usuario_data, IX_compra_itens_produto): Índices Não-Agrupados (Non-Clustered) criados para aceleração de pesquisas em consultas frequentes de filtragem por data e utilizador.
 
-🚀 Como Executar o Projeto
+## 🚀 Como Executar o Projeto
 Prerequisitos
 .NET 8 SDK instalado.
 
@@ -78,7 +78,7 @@ dotnet restore
 dotnet run
 Acede à aplicação no navegador: https://localhost:7198 (ou na porta configurada no teu ambiente).
 
-📡 Chamadas e Testes de API / Endpoints
+## 📡 Chamadas e Testes de API / Endpoints
 Abaixo estão listados exemplos de endpoints internos utilizados para integração das funcionalidades:
 
 1. Registar Novo Mercado
@@ -131,5 +131,5 @@ JSON
   }
 ]
 
-📜 Licença e Autoria
+## 📜 Licença e Autoria
 Trabalho desenvolvido como requisito de avaliação da disciplina de Banco de Dados Avançado na Universidade Paulista (UNIP).
